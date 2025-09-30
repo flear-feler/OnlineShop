@@ -15,7 +15,7 @@
     5. В терминале выполните: pip install poetry
     6. В терминале выполните: poetry install
     7. Установите и настройте [PostgreSQL](https://www.postgresql.org/download/), Внесите имя и пароль пользователя в файл \OnlineShop\forum_backend\.env
-    8. В терминале выполните: mysql -u <имя_пользователя> -p -e "CREATE DATABASE <имя БД> CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;". Внесите имя БД в файл .env из предыдущего шага
+    8. В терминале выполните: CREATE DATABASE <имя Базы Данных>;. Внесите имя БД в файл .env из предыдущего шага
     9. В терминале выполните: alembic revision --autogenerate -m "Initial database setup"
     10. В терминале выполните: alembic upgrade head
     11. Запустите на выполнение файл main.py
