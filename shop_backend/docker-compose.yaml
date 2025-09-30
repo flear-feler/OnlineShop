@@ -1,0 +1,13 @@
+services:
+  road-analyze-redis:
+    image: redis:latest
+    ports:
+      - "${REDIS_PORT}:6379"
+    volumes:
+      - road-analyze-redis:/data
+    env_file:
+      - .env
+
+
+volumes:
+  road-analyze-redis:
